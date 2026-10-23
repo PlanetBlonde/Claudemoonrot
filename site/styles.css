@@ -205,6 +205,29 @@ footer p { margin: .5rem auto; max-width: 44rem; line-height: 1.7; }
 .mail { color: var(--rose); text-transform: none; letter-spacing: .02em; font-size: .95rem; }
 .fine { text-transform: none; letter-spacing: .02em; font-style: italic; }
 
+.shop .intro { max-width: 40rem; color: var(--ink-dim); margin: -1.2rem 0 2rem; }
+.products { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); }
+.product {
+  background: var(--bg-2); border: 1px solid var(--line);
+  border-radius: 1.25rem 1.25rem 1.25rem .25rem; overflow: hidden;
+  display: flex; flex-direction: column;
+  transition: transform .5s cubic-bezier(.2, .8, .2, 1), border-color .3s ease;
+}
+.product:hover { transform: translateY(-6px) rotate(-1deg); border-color: var(--rose); }
+.product:nth-child(even):hover { transform: translateY(-6px) rotate(1deg); }
+.shot { position: relative; aspect-ratio: 1; background: radial-gradient(circle at 50% 40%, var(--line), var(--bg-2) 70%); display: grid; place-items: center; }
+.shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.shot .ph { width: 42%; fill: color-mix(in srgb, var(--tint) 30%, transparent); stroke: var(--tint); stroke-width: 2; stroke-linejoin: round; }
+.shot .soon { position: absolute; bottom: .9rem; right: 1rem; font: 700 1.2rem/1 "Caveat", cursive; color: var(--rose); transform: rotate(-4deg); }
+.info { padding: 1.25rem 1.4rem 1.4rem; display: flex; flex-direction: column; flex: 1; }
+.info .kind { font: 400 .7rem/1.4 "Space Mono", monospace; text-transform: uppercase; letter-spacing: .12em; color: var(--moss); margin: 0 0 .4rem; }
+.info h3 { font: italic 500 1.7rem/1.1 "Fraunces", serif; font-variation-settings: "SOFT" 100, "WONK" 1; margin: 0 0 .5rem; }
+.info > p:not(.kind) { color: var(--ink-dim); margin: 0 0 1.2rem; font-size: .98rem; }
+.buyrow { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.price { font-weight: 700; font-size: 1.15rem; white-space: nowrap; }
+.buy { white-space: nowrap; background: var(--rose); color: #1a0e06; border-radius: 2rem; padding: .6rem 1.1rem; font-weight: 700; text-decoration: none; }
+.buy.off { background: transparent; color: var(--ink-dim); border: 1px dashed var(--line); font-weight: 500; font-size: .9rem; }
+
 /* reveal */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s ease, transform .9s cubic-bezier(.2, .8, .2, 1); }
 .reveal.in { opacity: 1; transform: none; }

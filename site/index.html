@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@1,9..144,300..700,100,1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
   <script>
     try { const t = localStorage.getItem('fm-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
@@ -78,19 +78,81 @@
   </div>
 
   <main>
-    <section class="block" aria-labelledby="first">
+    <section class="block shop" id="shop" aria-labelledby="first">
       <p class="label">01 / The first shelf</p>
-      <h2 id="first">Opening <span class="swash">with</span></h2>
-      <div class="cards two">
-        <article class="card reveal">
-          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 46 22 40 58H24L18 22Z"/><path d="M18 22h28M32 6l-6 16 6 36 6-36z"/></svg>
-          <h3>Crystals</h3>
-          <p>Picked by hand, photographed honestly, and shipped wrapped like they matter. Because they do.</p>
+      <h2 id="first">Crystals, <span class="swash">first</span></h2>
+      <p class="intro">Real stones, photographed honestly, wrapped like they matter. One of a kind means the exact stone pictured. Intuitively chosen means we pick yours from the batch.</p>
+      <div class="products">
+        <article class="product reveal">
+          <div class="shot">
+            <svg class="ph" viewBox="0 0 100 120" aria-hidden="true" style="--tint:#e79aa6"><path d="M50 6 L68 26 L68 112 L32 112 L32 26 Z"/><path d="M32 26 H68 M50 6 V26"/></svg>
+            <span class="soon">photo soon</span>
+          </div>
+          <div class="info">
+            <p class="kind">One of a kind</p>
+            <h3>Rhodonite tower</h3>
+            <p>Rose pink with black veins running through it like ink dropped in water. The big one. Put it on a shelf and everything next to it looks better.</p>
+            <div class="buyrow"><span class="price">Price soon</span><span class="buy off">Coming soon</span></div>
+          </div>
         </article>
-        <article class="card reveal">
-          <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="20" y="28" width="24" height="28" rx="2"/><path d="M32 28v-6"/><path class="flame" d="M32 8c5 6 6 10 0 14-6-4-5-8 0-14z"/></svg>
-          <h3>Candles</h3>
-          <p>Poured in small batches. Burn one for a ritual, a bath, or because the kitchen still smells like burnt toast.</p>
+        <article class="product reveal">
+          <div class="shot">
+            <svg class="ph" viewBox="0 0 100 120" aria-hidden="true" style="--tint:#e7c46a"><path d="M50 6 L68 26 L68 112 L32 112 L32 26 Z"/><path d="M32 26 H68 M50 6 V26"/></svg>
+            <span class="soon">photo soon</span>
+          </div>
+          <div class="info">
+            <p class="kind">One of a kind</p>
+            <h3>Septarian tower</h3>
+            <p>Honey-yellow calcite cracked through with chocolate-brown lines. It formed in mud on an ancient seabed, which is about as dark a backstory as a rock gets.</p>
+            <div class="buyrow"><span class="price">Price soon</span><span class="buy off">Coming soon</span></div>
+          </div>
+        </article>
+        <article class="product reveal">
+          <div class="shot">
+            <svg class="ph" viewBox="0 0 100 120" aria-hidden="true" style="--tint:#7fae74"><path d="M50 6 L68 26 L68 112 L32 112 L32 26 Z"/><path d="M32 26 H68 M50 6 V26"/></svg>
+            <span class="soon">photo soon</span>
+          </div>
+          <div class="info">
+            <p class="kind">Intuitively chosen &middot; 4 available</p>
+            <h3>Ruby in zoisite tower</h3>
+            <p>Moss green and black with pops of raspberry red. No two are patterned alike, so we pick the one that seems most ready to leave.</p>
+            <div class="buyrow"><span class="price">Price soon</span><span class="buy off">Coming soon</span></div>
+          </div>
+        </article>
+        <article class="product reveal">
+          <div class="shot">
+            <svg class="ph" viewBox="0 0 100 120" aria-hidden="true" style="--tint:#5fb3ad"><ellipse cx="50" cy="60" rx="36" ry="27" transform="rotate(-18 50 60)"/><path d="M28 54 q16 -14 40 -8" /></svg>
+            <span class="soon">photo soon</span>
+          </div>
+          <div class="info">
+            <p class="kind">One of a kind</p>
+            <h3>Amazonite palm stone</h3>
+            <p>Sea-glass blue-green streaked with white, like sunlight on the bottom of a pool. Smooth enough that you'll keep picking it up.</p>
+            <div class="buyrow"><span class="price">Price soon</span><span class="buy off">Coming soon</span></div>
+          </div>
+        </article>
+        <article class="product reveal">
+          <div class="shot">
+            <svg class="ph" viewBox="0 0 100 120" aria-hidden="true" style="--tint:#e7c46a"><ellipse cx="50" cy="60" rx="36" ry="27" transform="rotate(-18 50 60)"/><path d="M28 54 q16 -14 40 -8" /></svg>
+            <span class="soon">photo soon</span>
+          </div>
+          <div class="info">
+            <p class="kind">Intuitively chosen</p>
+            <h3>Septarian palm stone</h3>
+            <p>Pocket-sized, polished, and striped like something out of a fossil drawer. Fits in your palm, as advertised.</p>
+            <div class="buyrow"><span class="price">Price soon</span><span class="buy off">Coming soon</span></div>
+          </div>
+        </article>
+        <article class="product reveal">
+          <div class="shot">
+            <img src="img/peach-moonstone.jpg" alt="Five tumbled peach moonstones on a dark woven mat" width="800" height="800" loading="lazy">
+          </div>
+          <div class="info">
+            <p class="kind">Intuitively chosen &middot; 4 available</p>
+            <h3>Peach moonstone tumble</h3>
+            <p>Soft peach and cream with the shimmer moonstone gets when it catches the light. The moon's stone. Obviously we had to.</p>
+            <div class="buyrow"><span class="price">Price soon</span><span class="buy off">Coming soon</span></div>
+          </div>
         </article>
       </div>
     </section>
@@ -98,7 +160,11 @@
     <section class="block later" aria-labelledby="later">
       <p class="label">02 / Brewing in the back</p>
       <h2 id="later">Coming <span class="hand">later</span></h2>
-      <div class="cards two">
+      <div class="cards">
+        <article class="card reveal">
+          <h3>Candles</h3>
+          <p>Poured in small batches. Burn one for a ritual, a bath, or because the kitchen still smells like burnt toast.</p>
+        </article>
         <article class="card reveal">
           <h3>Art &amp; jewelry</h3>
           <p>Original pieces by Ajax. Small runs, no restocks, so don't dither.</p>
@@ -147,6 +213,6 @@
     <p>&copy; 2026 Fox &amp; Moonrot Mercantile</p>
   </footer>
 
-  <script src="main.js?v=5" defer></script>
+  <script src="main.js?v=6" defer></script>
 </body>
 </html>
