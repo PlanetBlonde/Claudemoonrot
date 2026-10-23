@@ -6,7 +6,7 @@
   --ink-dim: #b6ad98;
   --moon: #f3edd3;
   --ink-on-moon: #2b3a22;
-  --fox: #e8793e;
+  --rose: #f0928a;
   --fennec: #ead6ae;
   --fennec-ruff: #fbf3e2;
   --fennec-ear: #e7b7a6;
@@ -24,7 +24,7 @@
   --ink-dim: #5a5f43;
   --moon: #e2a43f;
   --ink-on-moon: #5b3610;
-  --fox: #c2541f;
+  --rose: #b4475a;
   --fennec: #ecd4a6;
   --fennec-ruff: #fdf6e8;
   --fennec-ear: #e2a796;
@@ -51,7 +51,7 @@ body {
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 
 .swash { font-family: "Fraunces", Georgia, serif; font-style: italic; font-weight: 400; font-variation-settings: "SOFT" 100, "WONK" 1; color: var(--lilac); }
-.hand { font-family: "Caveat", cursive; font-weight: 700; color: var(--fox); }
+.hand { font-family: "Caveat", cursive; font-weight: 700; color: var(--rose); }
 
 .stars { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
 
@@ -67,7 +67,7 @@ body {
   -webkit-backdrop-filter: blur(8px);
 }
 .mark { color: var(--ink); text-decoration: none; font: 700 1.4rem/1 "Bricolage Grotesque", sans-serif; letter-spacing: 0; }
-.mark em { font: italic 400 1.5rem/1 "Fraunces", serif; color: var(--fox); padding: 0 .05em; }
+.mark em { font: italic 400 1.5rem/1 "Fraunces", serif; color: var(--rose); padding: 0 .05em; }
 .toggle {
   display: flex; align-items: center; gap: .6rem;
   background: none; border: 0; color: var(--ink); cursor: pointer;
@@ -127,13 +127,13 @@ body {
   transition: color .4s ease;
 }
 .kinetic .ch.alt-swash { font-family: "Fraunces", serif; font-style: italic; font-weight: 300; font-variation-settings: "SOFT" 100, "WONK" 1; text-transform: lowercase; color: var(--lilac); letter-spacing: 0; }
-.kinetic .ch.alt-hand { font-family: "Caveat", cursive; font-weight: 700; text-transform: lowercase; color: var(--fox); font-size: 1.08em; letter-spacing: 0; }
+.kinetic .ch.alt-hand { font-family: "Caveat", cursive; font-weight: 700; text-transform: lowercase; color: var(--rose); font-size: 1.08em; letter-spacing: 0; }
 .kinetic .ch.sp { width: .25em; }
 
 .lede { position: relative; font-size: clamp(1.25rem, 2.6vw, 1.9rem); line-height: 1.25; margin: 1.5rem 0 1rem; max-width: 34rem; }
 .lede .hand { font-size: 1.2em; }
 .status { color: var(--ink-dim); margin: 0; display: flex; align-items: center; gap: .6rem; }
-.dot { width: .55rem; height: .55rem; border-radius: 50%; background: var(--fox); animation: pulse 2s ease-in-out infinite; }
+.dot { width: .55rem; height: .55rem; border-radius: 50%; background: var(--rose); animation: pulse 2s ease-in-out infinite; }
 
 /* marquee */
 .marquee {
@@ -166,19 +166,19 @@ main { position: relative; z-index: 1; max-width: 76rem; margin: 0 auto; padding
   padding: 1.6rem;
   transition: transform .5s cubic-bezier(.2, .8, .2, 1), border-color .3s ease;
 }
-.card:hover { transform: rotate(-1.5deg) translateY(-6px); border-color: var(--fox); }
+.card:hover { transform: rotate(-1.5deg) translateY(-6px); border-color: var(--rose); }
 .card:nth-child(even):hover { transform: rotate(1.5deg) translateY(-6px); }
 .card svg { width: 3rem; height: 3rem; fill: none; stroke: var(--moss); stroke-width: 2; stroke-linejoin: round; margin-bottom: 1rem; }
-.card svg .flame { fill: var(--fox); stroke: var(--fox); transform-origin: 32px 22px; animation: flicker 1.8s ease-in-out infinite; }
+.card svg .flame { fill: var(--rose); stroke: var(--rose); transform-origin: 32px 22px; animation: flicker 1.8s ease-in-out infinite; }
 .card h3 { font: italic 500 1.9rem/1.1 "Fraunces", serif; font-variation-settings: "SOFT" 100, "WONK" 1; margin: 0 0 .6rem; }
 .card p { margin: 0; color: var(--ink-dim); }
-.later .card h3 { color: var(--fox); }
+.later .card h3 { color: var(--rose); }
 
 .pair { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); }
 .who { border-top: 1px solid var(--line); padding-top: 1.25rem; }
 .who p { margin: 0; color: var(--ink-dim); }
 .who .name { font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 700; color: var(--ink); line-height: 1; margin-bottom: .75rem; }
-.who .name span { font-family: "Caveat", cursive; color: var(--fox); font-size: .7em; margin-left: .3rem; }
+.who .name span { font-family: "Caveat", cursive; color: var(--rose); font-size: .7em; margin-left: .3rem; }
 .family { font-size: clamp(1.2rem, 2.4vw, 1.6rem); line-height: 1.4; max-width: 46rem; margin: 3rem 0 0; }
 
 .letter > p { max-width: 32rem; color: var(--ink-dim); margin: -1rem 0 1.5rem; }
@@ -191,7 +191,7 @@ main { position: relative; z-index: 1; max-width: 76rem; margin: 0 auto; padding
 }
 .signup input::placeholder { color: var(--ink-dim); }
 .signup button {
-  background: var(--fox); color: #1a0e06; border: 0; border-radius: 2rem;
+  background: var(--rose); color: #1a0e06; border: 0; border-radius: 2rem;
   padding: .9rem 1.6rem; font: 700 1rem/1 "Bricolage Grotesque", sans-serif; cursor: pointer;
   transition: transform .3s ease;
 }
@@ -201,7 +201,7 @@ main { position: relative; z-index: 1; max-width: 76rem; margin: 0 auto; padding
 
 footer { position: relative; z-index: 1; margin-top: 6rem; padding: 2rem 1rem 3rem; border-top: 1px solid var(--line); text-align: center; color: var(--ink-dim); }
 footer p { margin: .5rem auto; max-width: 44rem; line-height: 1.7; }
-.mail { color: var(--fox); text-transform: none; letter-spacing: .02em; font-size: .95rem; }
+.mail { color: var(--rose); text-transform: none; letter-spacing: .02em; font-size: .95rem; }
 .fine { text-transform: none; letter-spacing: .02em; font-style: italic; }
 
 /* reveal */
