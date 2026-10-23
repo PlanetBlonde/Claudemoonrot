@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@1,9..144,300..700,100,1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
   <script>
     try { const t = localStorage.getItem('fm-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
@@ -46,14 +46,14 @@
       </svg>
       <svg class="fox" viewBox="-16 -52 232 232">
         <g class="head">
-          <path d="M34 84 Q-14 20 2 -26 Q12 -40 26 -30 Q66 6 84 64 L116 64 Q134 6 174 -30 Q188 -40 198 -26 Q214 20 166 84 L188 104 L100 170 L12 104 Z" fill="var(--fennec)" stroke="var(--fennec-edge)" stroke-width="2.5" stroke-linejoin="round"/>
-          <path class="ear l" d="M40 70 Q6 22 14 -14 Q48 14 72 60 Z" fill="var(--fennec-ear)"/>
-          <path class="ear r" d="M160 70 Q194 22 186 -14 Q152 14 128 60 Z" fill="var(--fennec-ear)"/>
-          <path d="M12 104 L74 112 L100 170 Z M188 104 L126 112 L100 170 Z" fill="var(--fennec-ruff)"/>
+          <path d="M34 84 Q-14 20 2 -26 Q12 -40 26 -30 Q66 6 84 64 L116 64 Q134 6 174 -30 Q188 -40 198 -26 Q214 20 166 84 L188 104 L100 170 L12 104 Z" fill="var(--fennec, #ead6ae)" stroke="var(--fennec-edge, transparent)" stroke-width="2.5" stroke-linejoin="round"/>
+          <path class="ear l" d="M40 70 Q6 22 14 -14 Q48 14 72 60 Z" fill="var(--fennec-ear, #e7b7a6)"/>
+          <path class="ear r" d="M160 70 Q194 22 186 -14 Q152 14 128 60 Z" fill="var(--fennec-ear, #e7b7a6)"/>
+          <path d="M12 104 L74 112 L100 170 Z M188 104 L126 112 L100 170 Z" fill="var(--fennec-ruff, #fbf3e2)"/>
           <path d="M60 96 q9 7 18 0 M122 96 q9 7 18 0" fill="none" stroke="#2a1d12" stroke-width="3.2" stroke-linecap="round"/>
           <path d="M92 158 L108 158 L100 169 Z" fill="#2a1d12"/>
         </g>
-        <g fill="var(--fennec)">
+        <g fill="var(--fennec, #ead6ae)">
           <circle class="twinkle" cx="-6" cy="30" r="2.5"/>
           <circle class="twinkle d2" cx="208" cy="140" r="2"/>
           <circle class="twinkle d3" cx="20" cy="160" r="1.8"/>
@@ -156,6 +156,6 @@
     <p>&copy; 2026 Fox &amp; Moonrot Mercantile</p>
   </footer>
 
-  <script src="main.js" defer></script>
+  <script src="main.js?v=3" defer></script>
 </body>
 </html>
