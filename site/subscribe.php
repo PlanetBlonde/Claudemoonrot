@@ -49,4 +49,13 @@ fflush($fh);
 flock($fh, LOCK_UN);
 fclose($fh);
 
+// A heads-up to the shop inbox. The CSV above is the real list, so a
+// failed send here never fails the signup.
+@mail(
+    'moon@foxandmoonrot.com',
+    'New letter signup: ' . $email,
+    $email . " just signed up for the launch letter.\n\nThe full list lives in private/subscribers.csv on the hosting account.",
+    "From: Fox & Moonrot <moon@foxandmoonrot.com>\r\nContent-Type: text/plain; charset=utf-8"
+);
+
 reply(true, "You're on the list. We'll write when the doors open.");
