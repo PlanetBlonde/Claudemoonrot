@@ -1,0 +1,99 @@
+:root {
+  --forest: #121a14;
+  --forest-2: #1a251d;
+  --moss: #7f9a5a;
+  --bone: #ece4d0;
+  --bone-dim: #b9b19e;
+  --rot: #b86e4b;
+  --line: #2c3a2f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--forest);
+  color: var(--bone);
+  font: 400 1.0625rem/1.65 "Work Sans", system-ui, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.hero {
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  background: radial-gradient(ellipse at 50% 30%, var(--forest-2), var(--forest) 70%);
+  border-bottom: 1px solid var(--line);
+}
+
+.moon { width: 120px; height: 120px; margin-bottom: 1.5rem; }
+
+.eyebrow {
+  margin: 0 0 .75rem;
+  font-size: .8rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--moss);
+}
+
+h1 { font-size: clamp(2.75rem, 9vw, 5.5rem); }
+h1 span {
+  display: block;
+  font-style: italic;
+  font-weight: 500;
+  font-size: .45em;
+  color: var(--bone-dim);
+  margin-top: .35rem;
+}
+
+.tagline { font-size: 1.2rem; margin: 1.5rem 0 .5rem; }
+.status { color: var(--rot); margin: 0; max-width: 34rem; }
+
+main { max-width: 64rem; margin: 0 auto; padding: 0 1rem; }
+
+section { padding: 4.5rem 0 1rem; }
+section h2 {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  margin-bottom: 1.75rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
+}
+.grid.two { grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); }
+
+article {
+  background: var(--forest-2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+article h3 { font-size: 1.6rem; color: var(--moss); margin-bottom: .5rem; }
+article p { margin: 0; color: var(--bone-dim); }
+
+.later article h3 { color: var(--rot); }
+
+.about p { max-width: 40rem; font-size: 1.15rem; margin: 0; }
+
+footer {
+  margin-top: 5rem;
+  padding: 2rem 1rem 3rem;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  font-size: .85rem;
+  color: var(--bone-dim);
+}
+footer p { margin: .4rem auto; max-width: 40rem; }
+.fine { font-style: italic; }
