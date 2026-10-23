@@ -173,6 +173,7 @@ main { position: relative; z-index: 1; max-width: 76rem; margin: 0 auto; padding
 .card h3 { font: italic 500 1.9rem/1.1 "Fraunces", serif; font-variation-settings: "SOFT" 100, "WONK" 1; margin: 0 0 .6rem; }
 .card p { margin: 0; color: var(--ink-dim); }
 .later .card h3 { color: var(--rose); }
+.card .sub { font: 400 .75rem/1.4 "Space Mono", monospace; text-transform: uppercase; letter-spacing: .1em; color: var(--moss); margin: -.2rem 0 .7rem; }
 
 .pair { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); }
 .who { border-top: 1px solid var(--line); padding-top: 1.25rem; }
