@@ -1,71 +1,152 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="night">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fox &amp; Moonrot Mercantile</title>
-  <meta name="description" content="Oddities, plants and curiosities. Tarot readings, astrology charts, crystals and candles. Shop opening soon.">
+  <meta name="description" content="Oddities, plants and curiosities. Tarot readings, astrology charts, crystals and candles from a mother-and-kid shop in Massachusetts. Opening soon.">
+  <meta name="theme-color" content="#0d110e">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@1,9..144,300..700,100,1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    try { const t = localStorage.getItem('fm-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
 </head>
 <body>
-  <header class="hero">
-    <svg class="moon" viewBox="0 0 120 120" aria-hidden="true">
-      <circle cx="60" cy="60" r="44" fill="var(--bone)"/>
-      <circle cx="78" cy="50" r="40" fill="var(--forest)"/>
-      <circle cx="40" cy="70" r="4" fill="var(--moss)" opacity=".7"/>
-      <circle cx="30" cy="52" r="2.5" fill="var(--moss)" opacity=".6"/>
-      <circle cx="46" cy="88" r="3" fill="var(--moss)" opacity=".5"/>
-    </svg>
-    <p class="eyebrow">Est. 2026 &middot; Massachusetts</p>
-    <h1>Fox &amp; Moonrot<span>Mercantile</span></h1>
-    <p class="tagline">Oddities, plants &amp; curiosities for the curious and the brave.</p>
-    <p class="status">The shop isn't open yet. The candles are still curing and the cards are still shuffling.</p>
+  <canvas class="stars" aria-hidden="true"></canvas>
+
+  <nav class="bar">
+    <a class="mark" href="#top" aria-label="Fox &amp; Moonrot, back to top">F<em>&amp;</em>M</a>
+    <button class="toggle" type="button" aria-pressed="false" aria-label="Switch to day">
+      <span>Night</span><i aria-hidden="true"></i><span>Day</span>
+    </button>
+    <a class="nav-cta" href="#letter">Get the letter</a>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="sky" aria-hidden="true">
+      <svg class="moon" viewBox="0 0 200 200">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="var(--moon)" stop-opacity=".55"/>
+            <stop offset="100%" stop-color="var(--moon)" stop-opacity="0"/>
+          </radialGradient>
+          <mask id="crescent">
+            <rect width="200" height="200" fill="#fff"/>
+            <circle cx="126" cy="84" r="58" fill="#000"/>
+          </mask>
+        </defs>
+        <circle class="halo" cx="100" cy="100" r="98" fill="url(#glow)"/>
+        <circle cx="100" cy="100" r="62" fill="var(--moon)" mask="url(#crescent)"/>
+        <path d="M58 104 q8 7 16 0" fill="none" stroke="var(--ink-on-moon)" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M62 120 q6 4 12 1" fill="none" stroke="var(--ink-on-moon)" stroke-width="2" stroke-linecap="round" opacity=".6"/>
+      </svg>
+      <svg class="fox" viewBox="0 0 200 180">
+        <g class="head">
+          <path d="M28 8 L78 58 L122 58 L172 8 L166 84 L190 104 L100 170 L10 104 L34 84 Z" fill="var(--fox)"/>
+          <path class="ear l" d="M38 24 L70 60 L46 70 Z" fill="var(--bg)" opacity=".55"/>
+          <path class="ear r" d="M162 24 L130 60 L154 70 Z" fill="var(--bg)" opacity=".55"/>
+          <path d="M10 104 L74 112 L100 170 Z M190 104 L126 112 L100 170 Z" fill="var(--moon)"/>
+          <path d="M56 94 q10 8 20 0 M124 94 q10 8 20 0" fill="none" stroke="#1a0e06" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M91 158 L109 158 L100 170 Z" fill="#1a0e06"/>
+        </g>
+        <g fill="var(--fox)">
+          <circle class="twinkle" cx="12" cy="30" r="2.5"/>
+          <circle class="twinkle d2" cx="194" cy="140" r="2"/>
+          <circle class="twinkle d3" cx="30" cy="160" r="1.8"/>
+        </g>
+      </svg>
+    </div>
+
+    <p class="eyebrow">Mercantile &middot; Est. 2026 &middot; Massachusetts</p>
+    <h1 class="kinetic" aria-label="Fox and Moonrot">
+      <span class="line" data-text="FOX &amp;"></span>
+      <span class="line" data-text="MOONROT"></span>
+    </h1>
+    <p class="lede">Oddities, plants &amp; curiosities for <span class="hand">the curious</span> and <span class="swash">the brave.</span></p>
+    <p class="status"><span class="dot" aria-hidden="true"></span> The shop isn't open yet. Candles curing, cards shuffling.</p>
   </header>
 
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Tarot</span><b>✶</b><span class="swash">Astrology</span><b>☾</b><span>Crystals</span><b>✶</b><span class="hand">Candles</span><b>☾</b><span>Art</span><b>✶</b><span class="swash">Jewelry</span><b>☾</b><span>Shelf potions</span><span class="hand small">(do NOT drink)</span><b>✶</b>
+      <span>Tarot</span><b>✶</b><span class="swash">Astrology</span><b>☾</b><span>Crystals</span><b>✶</b><span class="hand">Candles</span><b>☾</b><span>Art</span><b>✶</b><span class="swash">Jewelry</span><b>☾</b><span>Shelf potions</span><span class="hand small">(do NOT drink)</span><b>✶</b>
+    </div>
+  </div>
+
   <main>
-    <section class="offerings" aria-labelledby="first">
-      <h2 id="first">Opening with</h2>
-      <div class="grid">
-        <article>
+    <section class="block" aria-labelledby="first">
+      <p class="label">01 / The first shelf</p>
+      <h2 id="first">Opening <span class="swash">with</span></h2>
+      <div class="cards">
+        <article class="card reveal">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="16" y="8" width="32" height="48" rx="3"/><rect x="21" y="13" width="22" height="38" rx="1.5"/><path d="M32 22 l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
           <h3>Tarot readings</h3>
           <p>A spread pulled for your question, written up so you can sit with it later instead of half-remembering it in the car.</p>
         </article>
-        <article>
+        <article class="card reveal">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="24"/><circle cx="32" cy="32" r="15"/><path d="M32 8v48M8 32h48M15 15l34 34M49 15 15 49"/></svg>
           <h3>Astrology charts</h3>
           <p>Your natal chart, drawn and explained in plain English. Yes, including the part about your Mars placement.</p>
         </article>
-        <article>
+        <article class="card reveal">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6 46 22 40 58H24L18 22Z"/><path d="M18 22h28M32 6l-6 16 6 36 6-36z"/></svg>
           <h3>Crystals</h3>
           <p>Picked by hand, photographed honestly, and shipped wrapped like they matter. Because they do.</p>
         </article>
-        <article>
+        <article class="card reveal">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="20" y="28" width="24" height="28" rx="2"/><path d="M32 28v-6"/><path class="flame" d="M32 8c5 6 6 10 0 14-6-4-5-8 0-14z"/></svg>
           <h3>Candles</h3>
-          <p>Poured in small batches. Burn them for a ritual, a bath, or because the kitchen still smells like burnt toast.</p>
+          <p>Poured in small batches. Burn one for a ritual, a bath, or because the kitchen still smells like burnt toast.</p>
         </article>
       </div>
     </section>
 
-    <section class="later" aria-labelledby="later">
-      <h2 id="later">Coming later</h2>
-      <div class="grid two">
-        <article>
+    <section class="block later" aria-labelledby="later">
+      <p class="label">02 / Brewing in the back</p>
+      <h2 id="later">Coming <span class="hand">later</span></h2>
+      <div class="cards two">
+        <article class="card reveal">
           <h3>Art &amp; jewelry</h3>
-          <p>Original pieces from the house's resident artist. Small runs, no restocks, so don't dither.</p>
+          <p>Original pieces by Ajax. Small runs, no restocks, so don't dither.</p>
         </article>
-        <article>
+        <article class="card reveal">
           <h3>Shelf potions</h3>
           <p>Water, mica and a very good label. They swirl, they shimmer, they look incredible next to your books. They are DECOR. Do not drink them.</p>
         </article>
       </div>
     </section>
 
-    <section class="about" aria-labelledby="about">
-      <h2 id="about">Who's behind the counter</h2>
-      <p>A witch, gardener and baker with a dark sense of humor and a very full planner. Fox &amp; Moonrot is a family shop: practice on one side, art on the other, and a garden out back that is mostly winning.</p>
+    <section class="block about" aria-labelledby="about">
+      <p class="label">03 / Behind the counter</p>
+      <h2 id="about">The moon <span class="swash">&amp;</span> <span class="hand">the fox</span></h2>
+      <div class="pair">
+        <div class="who reveal">
+          <p class="name">Kyndra <span>the moon</span></p>
+          <p>Witch, gardener, baker, and the person who reads the fine print so nobody else has to. Does the readings, draws the charts, pours the candles, and checks the moon phase before planting anything.</p>
+        </div>
+        <div class="who reveal">
+          <p class="name">Ajax <span>the fox</span></p>
+          <p>Artist, fox enthusiast, and the reason this shop has a fox in its name. Makes the art and jewelry, and has strong opinions about every label design.</p>
+        </div>
+      </div>
+      <p class="family reveal">We're building this one together, at the kitchen table, mostly after dinner. Some of it is serious practice and some of it is glitter in a bottle, and we like it that way. Darkness, a little mystery, and a lot of laughing at our own jokes.</p>
+    </section>
+
+    <section class="block letter" id="letter" aria-labelledby="letter-h">
+      <p class="label">04 / When the doors open</p>
+      <h2 id="letter-h">Get <span class="swash">the</span> <span class="hand">letter</span></h2>
+      <p>One email when the shop opens. Maybe one more on a full moon. Never sold, never shared.</p>
+      <form class="signup" action="subscribe.php" method="post">
+        <label class="sr" for="email">Email address</label>
+        <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@somewhere.com">
+        <input class="hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit">Send it</button>
+        <p class="note" role="status" aria-live="polite"></p>
+      </form>
     </section>
   </main>
 
@@ -73,5 +154,7 @@
     <p class="fine">Readings and charts are for reflection and entertainment. Nothing sold here diagnoses, treats or cures anything, including Mercury retrograde.</p>
     <p>&copy; 2026 Fox &amp; Moonrot Mercantile</p>
   </footer>
+
+  <script src="main.js" defer></script>
 </body>
 </html>
