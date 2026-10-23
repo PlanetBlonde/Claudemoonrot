@@ -1,0 +1,5 @@
+# foxmoonrot.com was the old shop address. It is parked on this site, so
+# send anyone who arrives on it to the same page here, permanently.
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www\.)?foxmoonrot\.com$ [NC]
+RewriteRule ^(.*)$ https://foxandmoonrot.com/$1 [R=301,L]
