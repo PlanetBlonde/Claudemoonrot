@@ -217,6 +217,10 @@ footer p { margin: .5rem auto; max-width: 44rem; line-height: 1.7; }
 .product:nth-child(even):hover { transform: translateY(-6px) rotate(1deg); }
 .shot { position: relative; aspect-ratio: 1; background: radial-gradient(circle at 50% 40%, var(--line), var(--bg-2) 70%); display: grid; place-items: center; }
 .shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.shot img.alt { position: absolute; inset: 0; opacity: 0; transition: opacity .5s ease; }
+.product:hover .shot img.alt { opacity: 1; }
+.shelf { font: 400 .8rem/1.4 "Space Mono", monospace; text-transform: uppercase; letter-spacing: .14em; color: var(--rose); margin: 2.75rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.shelf:first-of-type { margin-top: 0; }
 .shot .ph { width: 42%; fill: color-mix(in srgb, var(--tint) 30%, transparent); stroke: var(--tint); stroke-width: 2; stroke-linejoin: round; }
 .shot .soon { position: absolute; bottom: .9rem; right: 1rem; font: 700 1.2rem/1 "Caveat", cursive; color: var(--rose); transform: rotate(-4deg); }
 .info { padding: 1.25rem 1.4rem 1.4rem; display: flex; flex-direction: column; flex: 1; }

@@ -1,0 +1,158 @@
+[
+  {
+    "group": "Towers & flames",
+    "items": [
+      {
+        "name": "Rhodonite tower",
+        "kind": "One of a kind",
+        "price": 45,
+        "photos": ["rhodonite-tower.jpg", "rhodonite-tower-2.jpg"],
+        "alt": "Tall pink rhodonite tower with black veins",
+        "desc": "Rose pink with black veins running through it like ink dropped in water. The big one. Put it on a shelf and everything next to it looks better."
+      },
+      {
+        "name": "Flower agate tower",
+        "kind": "One of a kind &middot; 5 in tall",
+        "price": 38,
+        "photos": ["flower-agate-tower.jpg", "flower-agate-tower-2.jpg"],
+        "alt": "Pale pink and white flower agate tower with small crystal pockets",
+        "desc": "Blush pink and cream, freckled with white blossoms and a few crystal-lined pockets that catch the light. Like a cherry tree that decided to become a rock."
+      },
+      {
+        "name": "Ruby in zoisite tower",
+        "kind": "Intuitively chosen &middot; 5 available",
+        "price": 22,
+        "photos": ["ruby-zoisite-towers.jpg", "ruby-zoisite-towers-2.jpg"],
+        "alt": "Green and black ruby in zoisite towers with raspberry pink patches",
+        "desc": "Moss green and black with pops of raspberry red. No two are patterned alike, so we pick the one that seems most ready to leave."
+      },
+      {
+        "name": "Septarian tower",
+        "kind": "One of a kind",
+        "price": 32,
+        "shape": "tower",
+        "tint": "#e7c46a",
+        "desc": "Honey-yellow calcite cracked through with chocolate-brown lines. It formed in mud on an ancient seabed, which is about as dark a backstory as a rock gets."
+      },
+      {
+        "name": "Quartz flame",
+        "kind": "One of a kind",
+        "price": 40,
+        "photos": ["quartz-flame.jpg"],
+        "alt": "Large polished clear quartz flame with a faint pink glow",
+        "desc": "A big polished flame of quartz, mostly clear with soft clouds and rainbows inside when the sun hits it. Looks like frozen candlelight."
+      },
+      {
+        "name": "Rainbow moonstone flame",
+        "kind": "One of a kind",
+        "price": 36,
+        "photos": ["rainbow-moonstone-flame.jpg"],
+        "alt": "White rainbow moonstone flame with black tourmaline patches",
+        "desc": "Milky white with black tourmaline streaks at the tip and base, and a blue flash that shows up when you tilt it toward a window."
+      }
+    ]
+  },
+  {
+    "group": "Spheres & clusters",
+    "items": [
+      {
+        "name": "Flower agate sphere",
+        "kind": "Intuitively chosen &middot; 3 available",
+        "price": 28,
+        "photos": ["flower-agate-spheres.jpg"],
+        "alt": "Three flower agate spheres on small stands",
+        "desc": "Round, glossy, and patterned in blush, cream and crystal. Stand included, because a sphere without one is just a marble with ambitions."
+      },
+      {
+        "name": "Grape agate cluster",
+        "kind": "One of a kind",
+        "price": 38,
+        "photos": ["grape-agate-cluster.jpg", "grape-agate-cluster-2.jpg"],
+        "alt": "Lavender grape agate cluster with tiny round crystal bubbles",
+        "desc": "Lavender bubbles of crystal piled up like a bunch of grapes, with little white starbursts underneath. Nobody believes it's natural. It is."
+      }
+    ]
+  },
+  {
+    "group": "Hearts & palm stones",
+    "items": [
+      {
+        "name": "Lapis lazuli heart",
+        "kind": "One of a kind",
+        "price": 24,
+        "photos": ["lapis-heart.jpg", "lapis-heart-2.jpg"],
+        "alt": "Deep blue lapis lazuli heart with gold pyrite flecks",
+        "desc": "Midnight blue with gold flecks of pyrite scattered across it like a night sky somebody spilled glitter on."
+      },
+      {
+        "name": "Carnelian heart",
+        "kind": "One of a kind",
+        "price": 18,
+        "photos": ["carnelian-heart.jpg", "carnelian-heart-2.jpg"],
+        "alt": "Glossy orange-red carnelian heart",
+        "desc": "Glossy orange-red with darker swirls inside, like looking into a cup of tea held up to a lamp."
+      },
+      {
+        "name": "Golden sheen obsidian palm stone",
+        "kind": "One of a kind",
+        "price": 16,
+        "photos": ["golden-sheen-obsidian-palm.jpg"],
+        "alt": "Black golden sheen obsidian palm stone with a gold shimmer",
+        "desc": "Looks plain black until the light moves, then a gold sheen slides across it. Volcanic glass, polished smooth enough to keep in a pocket."
+      },
+      {
+        "name": "Amethyst palm stone",
+        "kind": "Intuitively chosen &middot; 6 available",
+        "price": 12,
+        "photos": ["amethyst-palm-stones.jpg"],
+        "alt": "Six polished amethyst palm stones in lavender and white",
+        "desc": "Lavender to deep violet with white chevron bands. Every one is a slightly different shade of purple, which is the whole charm."
+      },
+      {
+        "name": "Green fluorite palm stone",
+        "kind": "Intuitively chosen &middot; 3 available",
+        "price": 12,
+        "photos": ["green-fluorite-palm-stones.jpg"],
+        "alt": "Three translucent green fluorite palm stones",
+        "desc": "Translucent sea-glass green with little wisps and clouds inside. Hold one up to a window and it glows."
+      },
+      {
+        "name": "Septarian palm stone",
+        "kind": "Intuitively chosen &middot; 5 available",
+        "price": 14,
+        "photos": ["septarian-palm-stones.jpg"],
+        "alt": "Five polished septarian palm stones in yellow, gray and brown",
+        "desc": "Pocket-sized, polished, and striped like something out of a fossil drawer. Fits in your palm, as advertised."
+      },
+      {
+        "name": "Amazonite palm stone",
+        "kind": "One of a kind",
+        "price": 18,
+        "shape": "palm",
+        "tint": "#5fb3ad",
+        "desc": "Sea-glass blue-green streaked with white, like sunlight on the bottom of a pool. Smooth enough that you'll keep picking it up."
+      }
+    ]
+  },
+  {
+    "group": "Tumbles",
+    "items": [
+      {
+        "name": "Peach moonstone tumble",
+        "kind": "Intuitively chosen &middot; 11 available",
+        "price": 6,
+        "photos": ["peach-moonstone-tumbles.jpg", "peach-moonstone-tumbles-2.jpg"],
+        "alt": "A pile of tumbled peach and cream moonstones",
+        "desc": "Soft peach and cream with the shimmer moonstone gets when it catches the light. The moon's stone. Obviously we had to."
+      },
+      {
+        "name": "Black tourmaline tumble",
+        "kind": "Intuitively chosen &middot; 3 available",
+        "price": 5,
+        "photos": ["black-tourmaline-tumbles.jpg"],
+        "alt": "Three glossy black tourmaline tumbled stones",
+        "desc": "Deep glossy black with a few silver flecks. The little black dress of the rock world: goes with everything."
+      }
+    ]
+  }
+]
