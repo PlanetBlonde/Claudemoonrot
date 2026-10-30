@@ -11,6 +11,7 @@ import re
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGE = ROOT / "site" / "index.html"
 DATA = ROOT / "tools" / "products.json"
+CATALOG = ROOT / "site" / "catalog.json"
 
 SHAPES = {
     "tower": '<path d="M50 6 L68 26 L68 112 L32 112 L32 26 Z"/><path d="M32 26 H68 M50 6 V26"/>',
@@ -34,9 +35,13 @@ def shot(item):
 def card(item):
     price = f'${item["price"]}' if item.get("price") is not None else "Price soon"
     link = item.get("link")
-    buy = (f'<a class="buy" href="{link}" target="_blank" rel="noopener">Buy &#8599;</a>' if link
-           else '<span class="buy off">Checkout soon</span>')
-    return f'''        <article class="product reveal">
+    if link:
+        buy = f'<a class="buy" href="{link}" target="_blank" rel="noopener">Buy &#8599;</a>'
+    elif item.get("price") is not None and item.get("stock", 0) > 0:
+        buy = f'<button class="buy add" type="button" data-id="{item["id"]}">Add to bag</button>'
+    else:
+        buy = '<span class="buy off">Sold out</span>'
+    return f'''        <article class="product reveal" data-id="{item["id"]}">
           <div class="shot">
             {shot(item)}
           </div>
@@ -64,6 +69,11 @@ def build():
     if n != 1:
         raise SystemExit("shop markers not found in index.html")
     PAGE.write_text(new)
+    # Server-side price list: checkout.php charges from this, never from the browser.
+    catalog = {i["id"]: {"name": i["name"], "price": i["price"], "stock": i.get("stock", 0),
+                         "image": (i.get("photos") or [None])[0]}
+               for g in groups for i in g["items"] if i.get("price") is not None and not i.get("link")}
+    CATALOG.write_text(json.dumps(catalog, indent=2) + "\n")
     print(f"built {sum(len(g['items']) for g in groups)} listings in {len(groups)} groups")
 
 

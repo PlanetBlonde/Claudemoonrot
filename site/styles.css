@@ -232,6 +232,52 @@ footer p { margin: .5rem auto; max-width: 44rem; line-height: 1.7; }
 .buy { white-space: nowrap; background: var(--rose); color: #1a0e06; border-radius: 2rem; padding: .6rem 1.1rem; font-weight: 700; text-decoration: none; }
 .buy.off { background: transparent; color: var(--ink-dim); border: 1px dashed var(--line); font-weight: 500; font-size: .9rem; }
 
+button.buy { border: 0; font: 700 1rem/1 "Bricolage Grotesque", sans-serif; cursor: pointer; }
+button.buy:disabled { background: transparent; color: var(--ink-dim); border: 1px dashed var(--line); font-weight: 500; font-size: .9rem; cursor: default; }
+
+/* bag */
+.bag-tab {
+  position: fixed; right: 1rem; bottom: 1rem; z-index: 20;
+  background: var(--bg-2); color: var(--ink); border: 1px solid var(--line); border-radius: 2rem;
+  padding: .7rem 1.1rem; font: 700 .95rem/1 "Bricolage Grotesque", sans-serif; cursor: pointer;
+  display: flex; align-items: center; gap: .5rem;
+}
+.bag-tab.has { border-color: var(--rose); }
+.bag-count { background: var(--rose); color: #1a0e06; border-radius: 1rem; min-width: 1.4rem; padding: .15rem .4rem; text-align: center; }
+.bag {
+  position: fixed; top: 0; right: 0; bottom: 0; z-index: 30; width: min(24rem, 100vw);
+  background: var(--bg); border-left: 1px solid var(--line); display: flex; flex-direction: column;
+  box-shadow: -1rem 0 3rem rgba(0, 0, 0, .35);
+}
+.bag[hidden] { display: none; }
+.bag-head { display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 1.25rem .5rem; }
+.bag-head h2 { font-size: 2.2rem; font-weight: 700; margin: 0; }
+.bag-x { background: none; border: 0; color: var(--ink); font-size: 2rem; line-height: 1; cursor: pointer; }
+.bag-list { list-style: none; margin: 0; padding: 0 1.25rem; overflow-y: auto; flex: 1; }
+.bag-list li { display: grid; grid-template-columns: 56px 1fr auto; gap: .8rem; align-items: center; padding: .8rem 0; border-bottom: 1px solid var(--line); }
+.bag-list img { border-radius: .4rem; object-fit: cover; }
+.bag-list .bag-empty { display: block; color: var(--ink-dim); border: 0; font-style: italic; }
+.bag-name { margin: 0; font-weight: 500; line-height: 1.25; }
+.bag-price { margin: 0; color: var(--ink-dim); font-size: .9rem; }
+.bag-qty { display: flex; align-items: center; gap: .5rem; }
+.bag-qty button { width: 1.8rem; height: 1.8rem; border-radius: 50%; border: 1px solid var(--line); background: none; color: var(--ink); cursor: pointer; }
+.bag-qty button:disabled { opacity: .35; cursor: default; }
+.bag-foot { padding: 1rem 1.25rem 1.5rem; border-top: 1px solid var(--line); }
+.bag-row { display: flex; justify-content: space-between; margin: .3rem 0; color: var(--ink-dim); }
+.bag-row.total { color: var(--ink); font-weight: 700; font-size: 1.15rem; margin-top: .6rem; }
+.bag-go { width: 100%; margin-top: 1rem; background: var(--rose); color: #1a0e06; border: 0; border-radius: 2rem; padding: .95rem; font: 700 1.05rem/1 "Bricolage Grotesque", sans-serif; cursor: pointer; }
+.bag-go:disabled { opacity: .5; cursor: default; }
+.bag-note { min-height: 1.2em; margin: .7rem 0 0; color: var(--rose); font-size: .9rem; }
+.bag-fine { margin: .4rem 0 0; font-size: .8rem; color: var(--ink-dim); }
+.bag-fine a, footer a { color: var(--ink-dim); }
+
+/* plain pages: policies, thanks */
+.page { position: relative; z-index: 1; max-width: 44rem; margin: 0 auto; padding: 7rem clamp(1rem, 4vw, 3rem) 2rem; }
+.page h1 { font-size: clamp(2.6rem, 8vw, 4.5rem); line-height: .95; letter-spacing: -.03em; margin: 0 0 2rem; }
+.page h2 { font-size: 1.6rem; margin: 2.5rem 0 .6rem; }
+.page p, .page li { color: var(--ink-dim); }
+.page a { color: var(--rose); }
+
 /* reveal */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s ease, transform .9s cubic-bezier(.2, .8, .2, 1); }
 .reveal.in { opacity: 1; transform: none; }

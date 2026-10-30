@@ -1,0 +1,104 @@
+{
+  "rhodonite-tower": {
+    "name": "Rhodonite tower",
+    "price": 45,
+    "stock": 1,
+    "image": "rhodonite-tower.jpg"
+  },
+  "flower-agate-tower": {
+    "name": "Flower agate tower",
+    "price": 38,
+    "stock": 1,
+    "image": "flower-agate-tower.jpg"
+  },
+  "ruby-in-zoisite-tower": {
+    "name": "Ruby in zoisite tower",
+    "price": 22,
+    "stock": 5,
+    "image": "ruby-zoisite-towers.jpg"
+  },
+  "septarian-tower": {
+    "name": "Septarian tower",
+    "price": 32,
+    "stock": 1,
+    "image": null
+  },
+  "quartz-flame": {
+    "name": "Quartz flame",
+    "price": 40,
+    "stock": 1,
+    "image": "quartz-flame.jpg"
+  },
+  "rainbow-moonstone-flame": {
+    "name": "Rainbow moonstone flame",
+    "price": 36,
+    "stock": 1,
+    "image": "rainbow-moonstone-flame.jpg"
+  },
+  "flower-agate-sphere": {
+    "name": "Flower agate sphere",
+    "price": 28,
+    "stock": 3,
+    "image": "flower-agate-spheres.jpg"
+  },
+  "grape-agate-cluster": {
+    "name": "Grape agate cluster",
+    "price": 38,
+    "stock": 1,
+    "image": "grape-agate-cluster.jpg"
+  },
+  "lapis-lazuli-heart": {
+    "name": "Lapis lazuli heart",
+    "price": 24,
+    "stock": 1,
+    "image": "lapis-heart.jpg"
+  },
+  "carnelian-heart": {
+    "name": "Carnelian heart",
+    "price": 18,
+    "stock": 1,
+    "image": "carnelian-heart.jpg"
+  },
+  "golden-sheen-obsidian-palm-stone": {
+    "name": "Golden sheen obsidian palm stone",
+    "price": 16,
+    "stock": 1,
+    "image": "golden-sheen-obsidian-palm.jpg"
+  },
+  "amethyst-palm-stone": {
+    "name": "Amethyst palm stone",
+    "price": 12,
+    "stock": 6,
+    "image": "amethyst-palm-stones.jpg"
+  },
+  "green-fluorite-palm-stone": {
+    "name": "Green fluorite palm stone",
+    "price": 12,
+    "stock": 3,
+    "image": "green-fluorite-palm-stones.jpg"
+  },
+  "septarian-palm-stone": {
+    "name": "Septarian palm stone",
+    "price": 14,
+    "stock": 5,
+    "image": "septarian-palm-stones.jpg"
+  },
+  "amazonite-palm-stone": {
+    "name": "Amazonite palm stone",
+    "price": 18,
+    "stock": 1,
+    "image": null
+  },
+  "peach-moonstone-tumble": {
+    "name": "Peach moonstone tumble",
+    "price": 6,
+    "stock": 11,
+    "image": "peach-moonstone-tumbles.jpg"
+  },
+  "black-tourmaline-tumble": {
+    "name": "Black tourmaline tumble",
+    "price": 5,
+    "stock": 3,
+    "image": "black-tourmaline-tumbles.jpg"
+  }
+}
