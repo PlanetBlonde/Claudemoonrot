@@ -36,7 +36,7 @@
       <p class="bag-row total"><span>Total</span><span class="bag-total"></span></p>
       <button class="bag-go" type="button">Checkout</button>
       <p class="bag-note" role="status" aria-live="polite"></p>
-      <p class="bag-fine">Secure payment by Stripe. <a href="policies.html">Shipping &amp; returns</a></p>
+      <p class="bag-fine">Secure payment by Stripe. <a href="policies.html">Shipping &amp; returns</a> &middot; <a href="privacy.html">Privacy</a></p>
     </div>`;
   const tab = document.createElement('button');
   tab.className = 'bag-tab';

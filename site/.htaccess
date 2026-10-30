@@ -3,3 +3,6 @@
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^(www\.)?foxmoonrot\.com$ [NC]
 RewriteRule ^(.*)$ https://foxandmoonrot.com/$1 [R=301,L]
+
+# Friendly address for the privacy policy.
+RewriteRule ^privacy-policy/?$ /privacy.html [R=301,L]
