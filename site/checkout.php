@@ -6,7 +6,7 @@ require __DIR__ . '/lib/shop.php';
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') json_reply(405, ['ok' => false]);
 
 $cfg = stripe_config();
-if (!$cfg) json_reply(503, ['ok' => false, 'message' => 'Checkout opens soon. Leave your email at the bottom of the page and we'll tell you the minute it does.']);
+if (!$cfg) json_reply(503, ['ok' => false, 'message' => "Checkout opens soon. Leave your email at the bottom of the page and we'll tell you the minute it does."]);
 
 $bag = json_decode(file_get_contents('php://input'), true)['items'] ?? [];
 if (!is_array($bag) || !$bag || count($bag) > 30) json_reply(422, ['ok' => false, 'message' => 'Your bag is empty.']);
