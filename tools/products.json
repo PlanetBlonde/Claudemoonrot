@@ -49,7 +49,8 @@
         "tint": "#e7c46a",
         "desc": "Honey-yellow calcite cracked through with chocolate-brown lines. It formed in mud on an ancient seabed, which is about as dark a backstory as a rock gets.",
         "stock": 1,
-        "id": "septarian-tower"
+        "id": "septarian-tower",
+        "hidden": true
       },
       {
         "name": "Quartz flame",
@@ -192,7 +193,8 @@
         "tint": "#5fb3ad",
         "desc": "Sea-glass blue-green streaked with white, like sunlight on the bottom of a pool. Smooth enough that you'll keep picking it up.",
         "stock": 1,
-        "id": "amazonite-palm-stone"
+        "id": "amazonite-palm-stone",
+        "hidden": true
       }
     ]
   },

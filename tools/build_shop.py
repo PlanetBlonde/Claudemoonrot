@@ -57,6 +57,9 @@ def card(item):
 
 def build():
     groups = json.loads(DATA.read_text())
+    # "hidden": true keeps a listing in products.json but off the site and out of checkout.
+    for g in groups:
+        g["items"] = [i for i in g["items"] if not i.get("hidden")]
     parts = []
     for g in groups:
         parts.append(f'      <h3 class="shelf">{html.escape(g["group"])}</h3>\n      <div class="products">\n')

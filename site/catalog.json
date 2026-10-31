@@ -17,12 +17,6 @@
     "stock": 5,
     "image": "ruby-zoisite-towers.jpg"
   },
-  "septarian-tower": {
-    "name": "Septarian tower",
-    "price": 32,
-    "stock": 1,
-    "image": null
-  },
   "quartz-flame": {
     "name": "Quartz flame",
     "price": 40,
@@ -82,12 +76,6 @@
     "price": 14,
     "stock": 5,
     "image": "septarian-palm-stones.jpg"
-  },
-  "amazonite-palm-stone": {
-    "name": "Amazonite palm stone",
-    "price": 18,
-    "stock": 1,
-    "image": null
   },
   "peach-moonstone-tumble": {
     "name": "Peach moonstone tumble",
